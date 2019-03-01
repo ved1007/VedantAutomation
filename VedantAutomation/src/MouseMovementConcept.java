@@ -9,7 +9,7 @@ public class MouseMovementConcept {
 	public static void main(String[] args) throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\PC User1\\Desktop\\SeleniumFiles\\VedantAutomation\\src\\Drivers\\chromedriver.exe");
+				"C:\\Users\\PC User1\\git\\VedantAutomation\\VedantAutomation\\src\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
@@ -25,6 +25,7 @@ public class MouseMovementConcept {
 		//hover over and select value from the list
 		driver.findElement(By.linkText("Seat + Meal Combo")).click();
 		
+		// 2 time hover over
 		
 		// 1st hover over
 		action.moveToElement(driver.findElement(By.id("ctl00_HyperLinkLogin"))).build().perform(); 
