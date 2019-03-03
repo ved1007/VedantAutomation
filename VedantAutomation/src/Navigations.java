@@ -9,14 +9,13 @@ public class Navigations {
 		
 		
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\PC User1\\Desktop\\SeleniumFiles\\VedantAutomation\\src\\Drivers\\chromedriver.exe");
+				"C:/Users/PC User1/git/VedantAutomation/VedantAutomation/src/Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		
 		driver.get("https://www.google.com/");
-		
 		
 		driver.navigate().to("http://amzon.com");
 		
@@ -36,6 +35,8 @@ public class Navigations {
 		driver.navigate().refresh(); // page will be refresh
 		
 		driver.quit();
+		
+		System.out.println("Webpage is closed");
 		
 	
 
